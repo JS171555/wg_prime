@@ -116,7 +116,96 @@ em {
     color: var(--fire-deep);
 }
 
+
+
+/* WG PRIME — Botão circular de orçamento pelo WhatsApp */
+.wg-gear-whatsapp {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: 2px solid #c23f0b;
+    border-radius: 50%;
+
+    background: transparent;
+    color: #c23f0b;
+
+    font-size: 23px;
+    line-height: 1;
+    text-decoration: none;
+    box-shadow: none;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.wg-gear-whatsapp:hover {
+    background-color: #c23f0b;
+    color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.wg-gear-whatsapp:focus-visible {
+    outline: 2px solid #c23f0b;
+    outline-offset: 4px;
+}
+
+.wg-gear-whatsapp i {
+    display: block;
+    line-height: 1;
+}
+
+
 /* botões */
+.btn--gear {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    padding: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #c23f0b;
+    border-radius: 50%;
+
+    background: transparent;
+    color: #c23f0b;
+
+    font-size: 23px;
+    line-height: 1;
+
+    text-decoration: none;
+    box-shadow: none;
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.btn--gear:hover {
+    background: #c23f0b;
+    color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.btn--gear i {
+    display: block;
+    line-height: 1;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -139,10 +228,7 @@ em {
 .btn:active {
     transform: scale(0.97);
 }
-.btn--fire {
-    background: var(--fire-deep);
-    color: #fff;
-}
+
 .btn--fire:hover {
     background: var(--ink-2);
 }
@@ -244,6 +330,13 @@ em {
     min-height: 44px;
     padding: 0.6rem 1.2rem;
 }
+
+.nav a i {
+    margin-right: 6px;
+    font-size: 0.95em;
+    vertical-align: middle;
+}
+
 .burger {
     display: none;
     width: 48px;
@@ -764,6 +857,8 @@ em {
     }
     .wa-bar {
         display: inline-flex;
+        background: var(--fire);
+        color: #fff;
         position: fixed;
         left: 1rem;
         right: 1rem;
