@@ -58,6 +58,23 @@ a {
 .sec--fire :focus-visible {
     outline-color: #fff;
 }
+
+
+
+.map-container {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+	width: 100%;
+	height: 450px;
+	display: block;
+}
+
+
+
 .wrap {
     width: min(100% - 2.5rem, var(--wrap));
     margin-inline: auto;
@@ -116,8 +133,6 @@ em {
     color: var(--fire-deep);
 }
 
-
-
 /* WG PRIME — Botão circular de orçamento pelo WhatsApp */
 .wg-gear-whatsapp {
     width: 56px;
@@ -164,7 +179,6 @@ em {
     display: block;
     line-height: 1;
 }
-
 
 /* botões */
 .btn--gear {
@@ -348,8 +362,6 @@ em {
     cursor: pointer;
 }
 
-
-
 .hero__img {
     position: relative;
     aspect-ratio: 4 / 5;
@@ -367,9 +379,6 @@ em {
     object-position: center;
     border-radius: inherit;
 }
-
-
-
 
 /* hero */
 .hero {
@@ -427,8 +436,6 @@ em {
 
 /* placeholders / imagens */
 
-
-
 /* vídeo principal do hero */
 .ph .hero__video {
     position: absolute;
@@ -446,9 +453,6 @@ em {
 .ph.is-missing .hero__video {
     display: none;
 }
-
-
-
 
 .ph {
     position: relative;
@@ -633,7 +637,7 @@ em {
 }
 
 /* galeria */
- .gal {
+.gal {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: clamp(0.75rem, 1.5vw, 1.25rem);
@@ -804,11 +808,11 @@ em {
         --ar: 1163/430 !important;
     }
 
-.hero__img2 {
-    order: -1;
-    max-height: none;
-    --ar: 4/3 !important;
-}
+    .hero__img2 {
+        order: -1;
+        max-height: none;
+        --ar: 4/3 !important;
+    }
     .hero__cta .btn {
         flex: 1 1 100%;
     }
